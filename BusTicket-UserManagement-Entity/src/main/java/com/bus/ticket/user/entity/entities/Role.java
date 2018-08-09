@@ -1,4 +1,4 @@
-package com.bus.ticket.user.entities;
+package com.bus.ticket.user.entity.entities;
 
 import java.io.Serializable;
 import java.util.List;

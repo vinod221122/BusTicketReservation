@@ -1,4 +1,4 @@
-package com.bus.ticket.user.entity.application;
+package com.bus.ticket.user.entity;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

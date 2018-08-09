@@ -1,4 +1,4 @@
-package com.bus.ticket.user.entities;
+package com.bus.ticket.user.entity.entities;
 
 import java.io.Serializable;
 
@@ -23,7 +23,7 @@ public class User implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 
 	@Column(name="b_travels")

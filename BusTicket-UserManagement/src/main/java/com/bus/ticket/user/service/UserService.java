@@ -36,12 +36,12 @@ public class UserService {
 	public UserDetailsBean persistUser(UserDetailsBean userDetailsBean) {
 		Role role = new Role();
 		RequestValidator.validateRequest(userDetailsBean);
-		User user = new User();
+		
 		//user = userRepository.findByUsername(userDetailsBean.getUserId());
-		user=getUserByUserName(userDetailsBean);
-		if (user.getUsername().equals(userDetailsBean.getUserId()))
+		User user=getUserByUserName(userDetailsBean);
+		if (Objects.nonNull(user) && user.getUsername().equals(userDetailsBean.getUserId()))
 			throw new UserExistException();
-
+		user=new User();
 		user.setFirstName(userDetailsBean.getFirstName());
 		user.setMiddleName(userDetailsBean.getMiddleName());
 		user.setLastName(userDetailsBean.getLastName());

@@ -55,6 +55,7 @@ public class UserService {
 			role.setId(3);
 			user.setRole(role);
 		} else {
+			user.setBTravels("N");
 			role.setId(2);
 			user.setRole(role);
 		}

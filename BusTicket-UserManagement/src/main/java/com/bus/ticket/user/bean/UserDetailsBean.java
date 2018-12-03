@@ -5,6 +5,7 @@ package com.bus.ticket.user.bean;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 /**
@@ -24,6 +25,7 @@ public class UserDetailsBean {
 	private String confPassword;
 	private String email;
 	private String mobile;
+	@JsonProperty
 	private boolean isAgent;
 
 	/**
